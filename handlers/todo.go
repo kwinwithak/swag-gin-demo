@@ -25,11 +25,9 @@ func GetAllTodos(c *gin.Context) {
 }
 
 // @Summary get a todo item by ID
-// @Description this is a pretty verbose description that really dives in depth
-// @Description and tells the user
-// @Description everything they could possibly need to know and in such an effective manner that
-// @Description the only emails they will send us are to thank us for changing their lives for the
-// @Description better so profoundly.
+// @Description this is a pretty verbose description showing
+// @Description that multi line descriptions work and that swag
+// @Description conveniently merges the text into a single string.
 // @ID get-todo-by-id
 // @Produce json
 // @Param id path string true "todo ID"

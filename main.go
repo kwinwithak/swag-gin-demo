@@ -10,7 +10,7 @@ import (
 
 // @title Go + Gin Todo API
 // @version 1.0
-// @description This is a sample server todo server. You can visit the GitHub repository at https://github.com/kwinwithaki/swag-gin-demo
+// @description This is a demo API. Visit the repo at https://github.com/kwinwithak/swag-gin-demo
 
 // @contact.name API Support
 // @contact.url http://www.swagger.io/support

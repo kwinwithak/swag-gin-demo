@@ -21,7 +21,7 @@ info:
     name: API Support
     url: http://www.swagger.io/support
   description: This is a sample server todo server. You can visit the GitHub repository
-    at https://github.com/LordGhostX/swag-gin-demo
+    at https://github.com/kwinwithak/swag-gin-demo
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
