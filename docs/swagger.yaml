@@ -1,0 +1,75 @@
+components:
+  schemas:
+    models.Message:
+      properties:
+        message:
+          type: string
+      type: object
+    models.Todo:
+      properties:
+        id:
+          type: string
+        task:
+          type: string
+      type: object
+externalDocs:
+  description: ""
+  url: ""
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: This is a sample server todo server. You can visit the GitHub repository
+    at https://github.com/LordGhostX/swag-gin-demo
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  title: Go + Gin Todo API
+  version: "1.0"
+openapi: 3.1.0
+paths:
+  /todo:
+    get:
+      description: this is a description of sorts, so to speak, as it were
+      operationId: get-all-todos
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.Todo'
+          description: OK
+      summary: get all items in the todo list
+  /todo/{id}:
+    get:
+      description: |-
+        this is a pretty verbose description that really dives in depth
+        and tells the user
+        everything they could possibly need to know and in such an effective manner that
+        the only emails they will send us are to thank us for changing their lives for the
+        better so profoundly.
+      operationId: get-todo-by-id
+      parameters:
+      - description: todo ID
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.Todo'
+          description: OK
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/models.Message'
+          description: Not Found
+      summary: get a todo item by ID
+servers:
+- url: /
